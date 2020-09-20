@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.regex.Pattern;
 
+//import tk.taxhidinkadiri.myapplication.Main_Screen.Main_Screen;
+
 public class Login_window extends AppCompatActivity {
     private EditText login_2_text;
     private Button login_second_button;
@@ -89,9 +91,9 @@ public class Login_window extends AppCompatActivity {
                 boolean h = validatePassword();
                 if (h) {
                     Toast.makeText(Login_window.this, "You have logged successful", Toast.LENGTH_SHORT).show();
-                    Intent intent_1 = new Intent(Login_window.this, Main_Screen.class);
+                /*    Intent intent_1 = new Intent(Login_window.this, Main_Screen.class);
                     intent_1.putExtra("login_to_main_screen", transferal_data);
-                    startActivity(intent_1);
+                    startActivity(intent_1);*/
                 } else {
                     Toast.makeText(Login_window.this, "Please try again, failed" +
                                     "It must contain: " +
@@ -131,6 +133,7 @@ public class Login_window extends AppCompatActivity {
 
 
         }
+
 
 
     }
